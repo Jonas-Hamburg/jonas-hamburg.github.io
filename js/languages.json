@@ -1,0 +1,34 @@
+{
+    "languages": [
+        {
+            "name": "Kotlin",
+            "image": {
+                "path": "/images/languages/Kotlin.svg",
+                "source": "https://www.jetbrains.com/company/brand/logos/",
+                "permission": "public domain",
+                "author": "JetBrains"
+            },
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Kotlin_(Programmiersprache)"
+        },
+        {
+            "name": "JavaScript",
+            "image": {
+                "path": "/images/languages/JavaScript.svg",
+                "source": "https://github.com/voodootikigod/logo.js/blob/1544bdeed/js.svg",
+                "permission": "MIT",
+                "author": "Chris Williams"
+            },
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Java_(Programmiersprache)"
+        }, 
+        {
+            "name": "Dart",
+            "image": {
+                "path": "/images/languages/Dart.png",
+                "source": "https://www.dartlang.org/logos/",
+                "permission": "Creative Commons Attribution 3.0 Unported",
+                "author": "https://www.dartlang.org/"
+            },
+            "wikipedia": "https://de.wikipedia.org/api/rest_v1/page/summary/Dart_(Programmiersprache)"
+        }
+    ]
+}

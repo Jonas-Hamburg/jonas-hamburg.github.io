@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Varela%20Round);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0);
+
+:root {
+    --font: 'Varela Round', sans-serif;
+    --icon: 'Material Symbols Outlined';
+
+    --primary: #202124;
+    --secondary: #0f0f3c;
+    --onPrimary: #f0faff;
+    --onSecondary: #f0faff;
+    --accent: #1e90ff;
+    --transparent: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a[target="_blank"]::after {
+    font-family: var(--icon);
+    content: '\e89e';
+    vertical-align: middle;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--onPrimary);
+    background-color: #000;
+    overflow-x: hidden;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+#content {
+    position: relative;
+    margin: auto;
+    background: var(--primary);
+    max-width: 1250px;
+    border-radius: 20px;
+}
+
+header > img:nth-child(1) {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+header > div {
+    height: 150px;
+    width: 150px;
+    margin: -120px auto 0 auto;
+}
+
+header > div > img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--primary);
+    border-radius: 100%;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header a {
+    display: block;
+    font-size: 17px;
+    width: max-content;
+    margin: 0 auto 15px auto;    
+}
+
+header a span {
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-image: url(/images/logo/GitHub-Mark-Light-64px.png);
+    height: 35px;
+    width: 35px;
+}
+
+about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    grid-gap: 5px; 
+}
+
+about > div {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+about div p {
+    font-size: 18px;
+}
+
+about div:nth-child(2) div {
+    display: inline-block;
+    width: min-content;
+    padding: 5px 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+about div:nth-child(2) div div {
+    cursor: text;
+    font-size: 15px;
+    text-align: center;
+    user-select: text;
+    color: rgb(80, 80, 80);
+    transition: color .2s;
+}
+
+about div:nth-child(2) div:hover div {
+    color: #fff;
+}
+
+about div:nth-child(2) img {
+    display: block;
+    margin: auto;
+}
+
+contact {
+    display: block;
+    padding: .1px 10px 20px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+contact form {
+    margin: auto;
+    max-width: 750px;
+}
+
+contact h1 {
+    display: block;
+}
+
+contact p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+contact form input,
+contact form textarea {
+    font-family: var(--font);
+    font-size: 18px;
+    padding: 10px;
+    color: var(--onSecondary);
+    background-color: #171717;
+    width: calc(100% - 2 * 15px);
+    border-radius: 5px;
+    border: 1px solid #596167;
+    resize: none;
+    outline: none;
+}
+
+contact form textarea {
+    height: 150px;
+}
+
+contact img {
+    display: block;
+    margin: auto;
+}
+
+contact form label {
+    display: block;
+    margin-top: 10px;
+}
+
+contact form button {
+    font-family: var(--font);
+    cursor: pointer;
+    background: linear-gradient(180deg, var(--accent), rgb(1,125,250));
+    background-color: var(--accent);
+    color: #fff;
+    border: 1px solid var(--black);
+    font-size: 18px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+    about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header > div {
+        width: 110px;
+        height: 110px;
+        margin: -90px auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header > div {
+        width: 75px;
+        height: 75px;
+        margin: -65px auto 0 auto;
+    }
+}
